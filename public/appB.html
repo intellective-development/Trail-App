@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>App B</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		.gridView{
+			width: 500px;
+			margin:auto; 
+			float: left;
+		}
+		.grid{
+			width: 500px; 
+			height: 500px;
+			background: #ccc;
+			cursor: pointer;
+			margin:auto;
+			overflow: hidden;
+			position: relative;
+		}
+		.grid label{
+			width: 40px;
+	      	height: 55px;
+	      	min-width: 30px;
+  			min-height: 45px;
+  			position: absolute;
+  			line-height: 55px;
+  			font-size: 13px;
+  			text-align: center;
+		}
+
+		.dot {
+	      width: 2px;
+	      height: 2px;
+	      background-color: black;
+	      position: absolute;
+    	}
+    	.btn{
+    		font-size: 14px;
+    		float: right;
+    		margin:10px 0;
+    	}
+    	.btnleft{
+    		font-size: 14px;
+    		float: left;
+    		margin:10px 0;
+    	}
+    	.box{
+    		width: 40px;
+	      	height: 55px;
+	      	min-width: 30px;
+  			min-height: 45px;
+  			border: 1px solid #000;
+  			background: #fff;
+  			position: absolute;
+  			line-height: 55px;
+  			text-align: center;
+    	}
+    	.showList{
+    		float: left;
+    		margin:10px;
+    		width: 350px;
+    	}
+    	.showList .list{
+    		float: left;
+    		width: 100%;
+    		padding: 5px 0;
+    	}
+	</style>
+</head>
+<body>
+	<div class="gridView">
+		<div class="grid" id="grid">
+			<div class="box" id="box1" style="left:20px; top: 20px;"></div>
+			<label style="left:20px; top: 60px;">Box 1</label>
+			<div class="box" id="box2" style="left:70px; top: 80px;"></div>
+			<label style="left:70px; top: 120px;">Box 2</label>
+			<div class="box" id="box3" style="left:120px; top: 20px;"></div>
+			<label style="left:120px; top: 60px;">Box 3</label>
+			<div class="box" id="box4" style="left:200px; top: 120px;"></div>
+			<label style="left:200px; top: 160px;">Box 4</label>
+			<div class="box" id="box5" style="left:320px; top: 320px;"></div>
+			<label style="left:320px; top: 360px;">Box 5</label>
+			<div class="box" id="box6" style="left:220px; top: 400px;"></div>
+			<label style="left:220px; top: 440px;">Box 6</label>
+			<div class="box" id="box7" style="left:320px; top: 110px;"></div>
+			<label style="left:320px; top: 150px;">Box 7</label>
+			<div class="box" id="box8" style="left:180px; top: 210px;"></div>
+			<label style="left:180px; top: 250px;">Box 8</label>
+			<div class="box" id="box9" style="left:50px; top: 290px;"></div>
+			<label style="left:50px; top: 330px;">Box 9</label>
+			<div class="box" id="box10" style="left:20px; top: 210px;"></div>
+			<label style="left:20px; top: 250px;">Box 10</label>
+		</div>
+		<button class="btnleft" onclick="callBackLive();">Live Trail</button>
+		<button class="btn" onclick="callBackReplay();">Replay Last Trail</button>
+
+	</div>
+
+	<div class="showList">
+		
+	</div>
+
+	<script type="text/javascript" src="./js/socket.io.js"></script>
+	<script type="text/javascript" src="./js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="./js/appB.js"></script>
+</body>
+</html>

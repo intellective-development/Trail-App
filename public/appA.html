@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>App A</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		.grid{
+			width: 500px; 
+			height: 500px;
+			background: #ccc;
+			cursor: pointer;
+			margin:auto;
+			overflow: hidden;
+			position: relative;
+		}
+
+		.dot {
+	      width: 2px;
+	      height: 2px;
+	      background-color: black;
+	      position: absolute;
+    	}
+	</style>
+</head>
+<body>
+
+	<div class="grid" id="grid"></div>
+	<script type="text/javascript" src="./js/socket.io.js"></script>
+	<script type="text/javascript" src="./js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="./js/appA.js"></script>
+</body>
+</html>
